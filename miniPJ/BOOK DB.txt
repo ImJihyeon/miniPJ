@@ -1,0 +1,90 @@
+create table BOOK(
+Book_Num Number(4) constraint Book_Num_Pk primary key,
+Book_Name Varchar2(100) not null,
+Book_Writer varchar2(50) not null,
+Book_Com varchar2(50) not null
+)segment creation immediate;
+
+create sequence Book_Num_seq nocache;
+
+insert into Book values(book_num_seq.nextval, '10년 후', '한국경제TV 산업팀', '지식노마드');
+insert into Book values(book_num_seq.nextval, '1만 시간의 재발견', '안데르스 에릭슨, 로버트 풀', '비즈니스북스');
+insert into Book values(book_num_seq.nextval, '2015-2017 앞으로 3년 세계 트렌드', '김상훈, 비즈트렌드연구회', '한스미디어');
+insert into Book values(book_num_seq.nextval, '2016 다보스 리포트', '김정욱 외', '매일경제신문사');
+insert into Book values(book_num_seq.nextval, '2020 유럽의 미래', '연세-SERI EU센터', '삼성경제연구소');
+insert into Book values(book_num_seq.nextval, '2033 미래 세계사', '비르지니 레송', '휴머니스트');
+insert into Book values(book_num_seq.nextval, '2인자 리더십', '김헌식', '북코리아');
+insert into Book values(book_num_seq.nextval, '4차 산업혁명의 충격', '클라우스 슈밥 외 26인', '흐름출판');
+insert into Book values(book_num_seq.nextval, '50개의 키워드로 읽는 자본주의 이야기', '김민주', '미래의창');
+insert into Book values(book_num_seq.nextval, '가장 멍청한 세대', '마크 바우어라인', '인물과사상사');
+insert into Book values(book_num_seq.nextval, '간디 자서전', '마하트마 간디', '-');
+insert into Book values(book_num_seq.nextval, '개천에서 용 나면 안 된다', '강준만', '인물과사상사');
+insert into Book values(book_num_seq.nextval, '거꾸로 보면 패턴이 보인다', '이지효', '처음북스');
+insert into Book values(book_num_seq.nextval, '경영은 관계다', '이병구', '세종서적');
+insert into Book values(book_num_seq.nextval, '경영자가 가져야 할 단 한 가지 습관', '스즈키 도시후미', '오씨이오(OCEO)');
+insert into Book values(book_num_seq.nextval, '경제로 읽는 교양 세계사', '오형규', '글담출판');
+insert into Book values(book_num_seq.nextval, '과학의 순교자', '이종호', '사과나무');
+insert into Book values(book_num_seq.nextval, '과학의 일곱기둥', '황진명, 김유항', '사과나무');
+insert into Book values(book_num_seq.nextval, '교양으로 읽는 인문학 클래식', '이현성', '스타북스');
+insert into Book values(book_num_seq.nextval, '구글의 미래', '토마스 슐츠', '비즈니스북스');
+insert into Book values(book_num_seq.nextval, '국가의 배신', '도현신', '인물과사상사');
+insert into Book values(book_num_seq.nextval, '권력과 부', '로널드 핀들레이, 케빈 H. 오루크', '에코리브르');
+insert into Book values(book_num_seq.nextval, '그들은 어떻게 최고가 되었나', '스티븐 R. 샬렌버거', '시그마북스');
+insert into Book values(book_num_seq.nextval, '그로스 해킹', '라이언 홀리데이', '길벗');
+insert into Book values(book_num_seq.nextval, '그릿 GRIT', '앤절라 더크워스', '비즈니스북스');
+insert into Book values(book_num_seq.nextval, '금융이슈로 읽는 글로벌 경제', '김용덕', '삼성경제연구소');
+insert into Book values(book_num_seq.nextval, '꿀벌의 민주주의', '토머스 D. 실러', '에코리브르');
+insert into Book values(book_num_seq.nextval, '나는 뇌입니다', '캐서린 러브데이', '행성B이오스');
+insert into Book values(book_num_seq.nextval, '나는 왜 괜찮은 아이디어가 없을까?', '오상진', '비즈니스북스');
+insert into Book values(book_num_seq.nextval, '나우루공화국의 비극', '뢱 폴리에', '에코리브르');
+insert into Book values(book_num_seq.nextval, '내 안에서 나를 만드는 것들', '애덤 스미스, 러셀 로버츠', '세계사');
+insert into Book values(book_num_seq.nextval, '너무 재밌어서 잠 못 드는 세계사', '우야마 다쿠에이', '생각의길');
+insert into Book values(book_num_seq.nextval, '노스페이스의 지퍼는 왜 길어졌을까?', '필립 K. 하워드', '인물과사상사');
+insert into Book values(book_num_seq.nextval, '놀이와 예술 그리고 상상력', '진중권', '휴머니스트');
+insert into Book values(book_num_seq.nextval, '농사짓는 철학자 불편한 책을 권하다', '도은', '행성:B잎새');
+insert into Book values(book_num_seq.nextval, '뇌, 신을 훔치다', 'KBS 파노라마 제작진', '인물과사상사');
+insert into Book values(book_num_seq.nextval, '누가 우리의 미래를 훔치는가', '마크 굿맨', '북라이프');
+insert into Book values(book_num_seq.nextval, '뉴스가 말하지 않는 것들', '이정환·정철운·금준경·차현아 외', '인물과사상사');
+insert into Book values(book_num_seq.nextval, '다모클레스의 칼', '유재수', '삼성경제연구소');
+insert into Book values(book_num_seq.nextval, '다빈치의 천재가 되는 7가지 원칙', '마이클 J. 겔브', '강이북스');
+insert into Book values(book_num_seq.nextval, '다시 과학을 생각한다', '김재호, 편다현', '에코리브르');
+insert into Book values(book_num_seq.nextval, '대가의 조언', '존 해먼드 외', '전략시티');
+insert into Book values(book_num_seq.nextval, '대분기', '케네스 포메란츠', '에코리브르');
+insert into Book values(book_num_seq.nextval, '대한민국 기업의 탄생', '김정호', '북오션');
+insert into Book values(book_num_seq.nextval, '대한민국 정부를 바꿔라', '이창길 외', '올림');
+insert into Book values(book_num_seq.nextval, '더 넥스트 플랜', '공선표', '이새');
+insert into Book values(book_num_seq.nextval, '데미안', '헤르만 헤세', '-');
+insert into Book values(book_num_seq.nextval, '덴마크 사람들처럼', '말레네 뤼달', '로그인');
+insert into Book values(book_num_seq.nextval, '동물농장', '조지 오웰', '-');
+insert into Book values(book_num_seq.nextval, '디지털뱅크, 은행의 종말을 고하다', '크리스 스키너', '미래의창');
+insert into Book values(book_num_seq.nextval, '레 미제라블', '빅토르 위고', '-');
+insert into Book values(book_num_seq.nextval, '로봇은 인간을 지배할 수 있을까', '이종호', '북카라반');
+insert into Book values(book_num_seq.nextval, '리더가 리더에게', '이석우', 'MID');
+insert into Book values(book_num_seq.nextval, '리더의 경영수업', '삼성경제연구소', '삼성경제연구소');
+insert into Book values(book_num_seq.nextval, '리질리언스', '기업의 미래를 결정하는 유전자', '올림');
+insert into Book values(book_num_seq.nextval, '마스터 알고리즘', '페드로 도밍고스', '비즈니스북스');
+insert into Book values(book_num_seq.nextval, '마음의 사생활', '김병수', '인물과사상사');
+insert into Book values(book_num_seq.nextval, '맛 이야기', '최낙언', '행성B잎새');
+insert into Book values(book_num_seq.nextval, '매혹하는 식물의 뇌', '스테파노 만쿠소, 알레산드라 비올라', '행성B이오스');
+insert into Book values(book_num_seq.nextval, '맥아더 1', '윌리엄 R. 맨체스터', '미래사');
+insert into Book values(book_num_seq.nextval, '머니', '스티브 포브스 외', '비즈파크');
+insert into Book values(book_num_seq.nextval, '명작 뒤에 숨겨진 사랑', '이동연', '평단문화사');
+insert into Book values(book_num_seq.nextval, '모바일 트렌드 2017', '커넥팅랩', '미래의창');
+insert into Book values(book_num_seq.nextval, '무업 사회', '구도 게이, 니시다 료스케', '펜타그램');
+insert into Book values(book_num_seq.nextval, '무엇을 버릴 것인가', '유필화', '비즈니스북스');
+insert into Book values(book_num_seq.nextval, '문명 패러독스', '송상호', '인물과사상사');
+insert into Book values(book_num_seq.nextval, '미국의 주인이 바뀐다', '안병진', '메디치미디어');
+insert into Book values(book_num_seq.nextval, '미래와의 대화', '토머스 프레이', '북스토리');
+insert into Book values(book_num_seq.nextval, '미래의 역습, 낯선 세상이 온다', '매튜 버로스', '비즈니스북스');
+insert into Book values(book_num_seq.nextval, '미친 교수의 헬수업', '박성태', '가디언');
+insert into Book values(book_num_seq.nextval, '바위를 들어올려라', '이나모리 가즈오', '서울문화사');
+insert into Book values(book_num_seq.nextval, '바이러스 쇼크', '최강석', '매일경제신문사');
+insert into Book values(book_num_seq.nextval, '박제가와 젊은 그들', '박성순', '고즈윈');
+insert into Book values(book_num_seq.nextval, '밤을 경영하라', '이동철 외', '아우름');
+insert into Book values(book_num_seq.nextval, '법륜 스님의 행복', '법륜', '나무의마음');
+insert into Book values(book_num_seq.nextval, '볼드', '피터 디아만디스, 스티븐 코틀러', '비즈니스북스');
+insert into Book values(book_num_seq.nextval, '부 활', '레프 니콜라예비치 톨스토이', '-');
+insert into Book values(book_num_seq.nextval, '부유하는 단어들', '최인호', '인물과사상사');
+insert into Book values(book_num_seq.nextval, '북극해 쟁탈전', '크리스토프 자이들러', '더숲');
+insert into Book values(book_num_seq.nextval, '블랙박스 사회', '프랭크 파스콸레', '안티고네');
+
